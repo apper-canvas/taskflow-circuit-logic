@@ -1,14 +1,14 @@
-import Home from '../pages/Home';
+import HomePage from '@/components/pages/HomePage';
 import NotFound from '../pages/NotFound';
 
-export const routes = {
-  home: {
+export const routes = [
+  {
     id: 'home',
     label: 'Home',
     path: '/',
     icon: 'Home',
-    component: Home
+    component: HomePage
   }
-};
+];
 
-export const routeArray = Object.values(routes);
+export const routeArray = routes;
